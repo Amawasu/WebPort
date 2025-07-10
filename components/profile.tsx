@@ -34,7 +34,7 @@ export default function Profile() {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-4">
                 Hi, I'm{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-600">
-                  Sarah Chen
+                  Amawasu Duangin
                 </span>
               </h1>
               <h2 className="text-2xl sm:text-3xl text-muted-foreground mb-6">Senior Full-Stack Developer</h2>
