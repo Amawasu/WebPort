@@ -17,13 +17,11 @@ export default function Header() {
 
   const navItems = [
     { name: "About", href: "#about" },
-    { name: "Experience", href: "#experience" },
     { name: "Projects", href: "#projects" },
     { name: "Education", href: "#education" },
     { name: "Skills", href: "#skills" },
     { name: "Languages", href: "#languages" },
     { name: "Certificates", href: "#certificates" },
-    { name: "Contact", href: "#contact" },
   ]
 
   if (!mounted) return null
@@ -33,7 +31,7 @@ export default function Header() {
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <Link href="/" className="text-2xl font-bold text-foreground">
-            DevPortfolio
+            Frontend Dev
           </Link>
 
           {/* Desktop Navigation */}

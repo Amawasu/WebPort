@@ -8,78 +8,16 @@ import Link from "next/link"
 export default function Certificates() {
   const certificates = [
     {
-      title: "AWS Solutions Architect Professional",
-      issuer: "Amazon Web Services",
-      issueDate: "2023",
-      expiryDate: "2026",
-      credentialId: "AWS-SAP-2023-001234",
+      title: "GenAI for Cybersecurity Analysts",
+      issuer: "Coursera Instructor Network",
+      issueDate: "2025",
+      expiryDate: "-",
       description:
-        "Advanced certification demonstrating expertise in designing distributed applications and systems on AWS platform.",
-      image: "/placeholder.svg?height=200&width=300",
-      verificationUrl: "https://aws.amazon.com/verification",
-      skills: ["Cloud Architecture", "AWS Services", "Security", "Cost Optimization"],
+        "Identify the capabilities of GenAI for basic role-specific cybersecurity functions.",
+      image: "public/photo/cer01.jpg",
+      verificationUrl: "https://www.coursera.org/account/accomplishments/verify/NTTT4RNU9KVA",
+      skills: ["Prompt Engineering", "Cyber Threat Intelligence", "Data Ethics", "Security Testing", "Generative AI", "Vulnerability Assessments", "Security Information and Event Management (SIEM)", "Threat Detection", "Penetration Testing", "Cybersecurity", "Incident Response"],
       status: "Active",
-    },
-    {
-      title: "Google Cloud Professional Developer",
-      issuer: "Google Cloud",
-      issueDate: "2023",
-      expiryDate: "2025",
-      credentialId: "GCP-PD-2023-567890",
-      description:
-        "Professional certification for designing, building, and deploying applications on Google Cloud Platform.",
-      image: "/placeholder.svg?height=200&width=300",
-      verificationUrl: "https://cloud.google.com/certification",
-      skills: ["GCP Services", "Kubernetes", "Cloud Functions", "BigQuery"],
-      status: "Active",
-    },
-    {
-      title: "Certified Kubernetes Administrator (CKA)",
-      issuer: "Cloud Native Computing Foundation",
-      issueDate: "2022",
-      expiryDate: "2025",
-      credentialId: "CKA-2022-112233",
-      description: "Hands-on certification demonstrating skills in Kubernetes administration and cluster management.",
-      image: "/placeholder.svg?height=200&width=300",
-      verificationUrl: "https://cncf.io/certification/verify",
-      skills: ["Kubernetes", "Container Orchestration", "Cluster Management", "Troubleshooting"],
-      status: "Active",
-    },
-    {
-      title: "MongoDB Certified Developer",
-      issuer: "MongoDB Inc.",
-      issueDate: "2022",
-      expiryDate: "2024",
-      credentialId: "MDB-DEV-2022-445566",
-      description: "Certification demonstrating proficiency in MongoDB database development and administration.",
-      image: "/placeholder.svg?height=200&width=300",
-      verificationUrl: "https://university.mongodb.com/verify",
-      skills: ["MongoDB", "NoSQL", "Database Design", "Aggregation Framework"],
-      status: "Active",
-    },
-    {
-      title: "React Developer Certification",
-      issuer: "Meta (Facebook)",
-      issueDate: "2021",
-      expiryDate: "2024",
-      credentialId: "META-REACT-2021-778899",
-      description: "Professional certification in React development covering advanced concepts and best practices.",
-      image: "/placeholder.svg?height=200&width=300",
-      verificationUrl: "https://developers.facebook.com/certification",
-      skills: ["React", "JavaScript", "Frontend Development", "State Management"],
-      status: "Active",
-    },
-    {
-      title: "Scrum Master Certified (SMC)",
-      issuer: "Scrum Alliance",
-      issueDate: "2021",
-      expiryDate: "2023",
-      credentialId: "SA-SMC-2021-334455",
-      description: "Certification in Scrum methodology and agile project management practices.",
-      image: "/placeholder.svg?height=200&width=300",
-      verificationUrl: "https://scrumalliance.org/verify",
-      skills: ["Scrum", "Agile Methodology", "Team Leadership", "Project Management"],
-      status: "Expired",
     },
   ]
 
@@ -162,9 +100,6 @@ export default function Certificates() {
                           Issued: {cert.issueDate} | Expires: {cert.expiryDate}
                         </span>
                       </div>
-                      <div className="text-xs text-muted-foreground">
-                        <span className="font-medium">Credential ID:</span> {cert.credentialId}
-                      </div>
                     </div>
 
                     <div className="mb-4">
@@ -237,39 +172,6 @@ export default function Certificates() {
               </div>
             </div>
           )}
-
-          {/* Certification Stats */}
-          <div>
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-3 text-xl">
-                  <Award className="h-6 w-6 text-primary" />
-                  Certification Journey
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-primary mb-2">{activeCertificates.length}</div>
-                    <div className="text-muted-foreground">Active Certifications</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-primary mb-2">{certificates.length}</div>
-                    <div className="text-muted-foreground">Total Certifications</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-primary mb-2">6+</div>
-                    <div className="text-muted-foreground">Years of Learning</div>
-                  </div>
-                </div>
-                <p className="text-muted-foreground text-center">
-                  I believe in continuous learning and staying updated with the latest technologies. These
-                  certifications represent my commitment to professional growth and expertise validation in key areas of
-                  software development and cloud technologies.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
         </div>
       </div>
     </section>

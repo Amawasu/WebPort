@@ -15,7 +15,7 @@ export default function Footer() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
-              <h3 className="text-xl font-bold text-foreground mb-4">Sarah Chen</h3>
+              <h3 className="text-xl font-bold text-foreground mb-4">Amawasu Duangain</h3>
               <p className="text-muted-foreground mb-4 max-w-md">
                 Senior Full-Stack Developer passionate about creating innovative solutions and building scalable
                 applications with modern technologies.

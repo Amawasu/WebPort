@@ -34,7 +34,7 @@ export default function Profile() {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-4">
                 Hi, I'm{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-600">
-                  Amawasu Duangin
+                  Amawasu Duangain
                 </span>
               </h1>
               <h2 className="text-2xl sm:text-3xl text-muted-foreground mb-6">Frontend Dev</h2>
@@ -70,7 +70,7 @@ export default function Profile() {
               {/* Social Links */}
               <div className="flex justify-center lg:justify-start space-x-4">
                 <Link
-                  href="https://github.com"
+                  href="https://github.com/Amawasu"
                   className="w-12 h-12 bg-muted rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
                 >
                   <Github className="h-5 w-5" />
@@ -82,7 +82,7 @@ export default function Profile() {
                   <Linkedin className="h-5 w-5" />
                 </Link>
                 <Link
-                  href="mailto:sarah.chen@example.com"
+                  href="mailto:amawasuduangin@gmail.com"
                   className="w-12 h-12 bg-muted rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
                 >
                   <Mail className="h-5 w-5" />
@@ -98,7 +98,7 @@ export default function Profile() {
                 <h3 className="text-2xl font-bold text-foreground mb-6">About Me</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div>
-                    <h4 className="text-lg font-semibold text-foreground mb-3">Professional Background</h4>
+                    <h4 className="text-lg font-semibold text-foreground mb-3">Background</h4>
                     <p className="text-muted-foreground mb-4">
                       I began my journey in web development through a web design course in university, which sparked my interest and led me to continue learning and growing in this field ever since.
                     </p>

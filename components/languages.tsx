@@ -6,33 +6,19 @@ import { Badge } from "@/components/ui/badge"
 export default function Languages() {
   const languages = [
     {
-      name: "English",
+      name: "ThaiLandthailand",
       level: "Native",
       proficiency: 100,
       description: "Native speaker with excellent written and verbal communication skills",
       certifications: ["TOEFL iBT: 118/120"],
     },
     {
-      name: "Mandarin Chinese",
+      name: "English",
       level: "Native",
-      proficiency: 100,
-      description: "Native speaker, fluent in both Simplified and Traditional Chinese",
-      certifications: ["HSK Level 6"],
-    },
-    {
-      name: "Spanish",
-      level: "Intermediate",
-      proficiency: 70,
-      description: "Conversational level with good comprehension and basic writing skills",
-      certifications: ["DELE B2"],
-    },
-    {
-      name: "Japanese",
-      level: "Beginner",
-      proficiency: 40,
-      description: "Basic conversational skills and reading comprehension",
-      certifications: ["JLPT N4"],
-    },
+      proficiency: 60,
+      description: "Native speaker with excellent written and verbal communication skills",
+      certifications: ["B1"],
+    }
   ]
 
   const communicationSkills = [

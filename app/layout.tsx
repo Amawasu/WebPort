@@ -10,44 +10,42 @@ import { Toaster } from "@/components/ui/toaster"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Sarah Chen - Senior Full-Stack Developer",
+  title: "Amawasu Duangain - Frontend Developer",
   description:
-    "Senior Full-Stack Developer & Software Engineer with 6+ years of experience building scalable web applications. Specializing in React, Node.js, and cloud technologies.",
+    "Frontend Developer ",
   keywords: [
-    "full-stack developer",
-    "software engineer",
     "React developer",
     "Node.js developer",
     "TypeScript",
     "cloud architecture",
     "web development",
-    "Sarah Chen",
+    "Amawasu Duangain",
   ],
-  authors: [{ name: "Sarah Chen" }],
-  creator: "Sarah Chen",
+  authors: [{ name: "Amawasu Duangain" }],
+  creator: "Amawasu Duangain",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://sarahchen.dev",
-    title: "Sarah Chen - Senior Full-Stack Developer",
+    url: "https://Amawasu.dev",
+    title: "Amawasu Duangain - Frontend Developer",
     description:
-      "Senior Full-Stack Developer & Software Engineer with 6+ years of experience building scalable web applications.",
-    siteName: "Sarah Chen Portfolio",
+      "Frontend Developer",
+    siteName: "Amawasu Duangain Portfolio",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Sarah Chen - Senior Full-Stack Developer",
+        alt: "Amawasu Duangain - Frontend Developer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sarah Chen - Senior Full-Stack Developer",
+    title: "Amawasu Duangain - Frontend Developer",
     description:
-      "Senior Full-Stack Developer & Software Engineer with 6+ years of experience building scalable web applications.",
-    creator: "@sarahchen_dev",
+      "Frontend Developer",
+    creator: "@Amawasu_dev",
     images: ["/og-image.jpg"],
   },
   robots: {
@@ -61,7 +59,7 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
