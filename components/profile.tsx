@@ -37,22 +37,20 @@ export default function Profile() {
                   Amawasu Duangin
                 </span>
               </h1>
-              <h2 className="text-2xl sm:text-3xl text-muted-foreground mb-6">Senior Full-Stack Developer</h2>
+              <h2 className="text-2xl sm:text-3xl text-muted-foreground mb-6">Frontend Dev</h2>
               <p className="text-lg text-muted-foreground mb-8 max-w-2xl">
-                Passionate software engineer with 6+ years of experience building scalable web applications and leading
-                development teams. I specialize in React, Node.js, and cloud technologies, with a focus on creating
-                user-centric solutions that drive business growth.
+                A fourth-year Information Technology student passionate about web development and UX/UI design. Experienced with Python, HTML, CSS, and JavaScript. Known for fast learning ability and enthusiasm in exploring practical skills in real working environments.
               </p>
 
               {/* Quick Info */}
               <div className="flex flex-wrap justify-center lg:justify-start gap-4 mb-8">
                 <div className="flex items-center gap-2 text-muted-foreground">
                   <MapPin className="h-4 w-4" />
-                  <span>San Francisco, CA</span>
+                  <span>pathum thani</span>
                 </div>
                 <div className="flex items-center gap-2 text-muted-foreground">
                   <Mail className="h-4 w-4" />
-                  <span>sarah.chen@example.com</span>
+                  <span>amawasuduangin@gmail.com</span>
                 </div>
               </div>
 
@@ -102,24 +100,19 @@ export default function Profile() {
                   <div>
                     <h4 className="text-lg font-semibold text-foreground mb-3">Professional Background</h4>
                     <p className="text-muted-foreground mb-4">
-                      I started my journey in software development during my Computer Science studies and have since
-                      worked with both startups and Fortune 500 companies. My experience spans across various industries
-                      including fintech, e-commerce, and healthcare.
+                      I began my journey in web development through a web design course in university, which sparked my interest and led me to continue learning and growing in this field ever since.
                     </p>
                     <p className="text-muted-foreground">
-                      I'm passionate about mentoring junior developers and contributing to open-source projects. I
-                      believe in writing clean, maintainable code and following best practices in software development.
+                      Throughout my studies, I gained experience in UX/UI design for both websites and mobile applications, as well as learning how to build and manage database systems to organize and display data effectively within web and app environments.
                     </p>
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-foreground mb-3">What I Do</h4>
                     <ul className="space-y-2 text-muted-foreground">
-                      <li>• Full-stack web application development</li>
-                      <li>• API design and microservices architecture</li>
-                      <li>• Cloud infrastructure and DevOps</li>
-                      <li>• Team leadership and project management</li>
-                      <li>• Code review and technical mentoring</li>
-                      <li>• Performance optimization and scaling</li>
+                      <li>• UI/UX design for web and mobile apps</li>
+                      <li>• Frontend development with HTML, CSS, and JavaScript</li>
+                      <li>• Designing and managing simple database structures</li>
+                      <li>• Prototyping and wireframing using Figma</li>
                     </ul>
                   </div>
                 </div>
