@@ -10,13 +10,13 @@ export default function Languages() {
       level: "Native",
       proficiency: 100,
       description: "Native speaker with excellent written and verbal communication skills",
-      certifications: ["TOEFL iBT: 118/120"],
+      certifications: ["Native"],
     },
     {
       name: "English",
-      level: "Native",
-      proficiency: 60,
-      description: "Native speaker with excellent written and verbal communication skills",
+      level: "Intermediate",
+      proficiency: 50,
+      description: "Proficient in understanding and using everyday language related to personal life, work, and immediate surroundings, and capable of simple, direct communication.",
       certifications: ["B1"],
     }
   ]
@@ -67,10 +67,7 @@ export default function Languages() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Languages & Communication</h2>
-            <p className="text-lg text-muted-foreground">
-              My language proficiency and communication skills for global collaboration
-            </p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Languages</h2>
           </div>
 
           {/* Language Proficiency */}
@@ -117,59 +114,6 @@ export default function Languages() {
                 </Card>
               ))}
             </div>
-          </div>
-
-          {/* Communication Skills */}
-          <div>
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-3 text-xl">
-                  <MessageCircle className="h-6 w-6 text-primary" />
-                  Communication Skills
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-6">
-                  Strong communication skills developed through years of working with international teams, presenting to
-                  stakeholders, and mentoring developers from diverse backgrounds.
-                </p>
-                <div className="flex flex-wrap gap-3">
-                  {communicationSkills.map((skill, index) => (
-                    <Badge key={index} variant="secondary" className="text-sm py-2 px-3">
-                      {skill}
-                    </Badge>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Language Learning Journey */}
-          <div className="mt-8">
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-xl text-foreground">Language Learning Journey</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4 text-muted-foreground">
-                  <p>
-                    <strong className="text-foreground">Multilingual Background:</strong> Growing up in a multicultural
-                    environment, I developed native proficiency in both English and Mandarin Chinese, which has been
-                    invaluable in my career working with global teams.
-                  </p>
-                  <p>
-                    <strong className="text-foreground">Continuous Learning:</strong> I'm actively improving my Spanish
-                    and Japanese skills through language exchange programs and online courses. I believe that language
-                    skills enhance cross-cultural collaboration and open up new opportunities.
-                  </p>
-                  <p>
-                    <strong className="text-foreground">Professional Impact:</strong> My language skills have enabled me
-                    to work effectively with teams across different time zones, conduct technical presentations in
-                    multiple languages, and serve as a cultural bridge in international projects.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>

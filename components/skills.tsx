@@ -10,12 +10,11 @@ export default function Skills() {
       icon: <Code className="h-6 w-6" />,
       color: "text-blue-600",
       skills: [
-        { name: "React/Next.js", level: 95 },
-        { name: "TypeScript", level: 90 },
-        { name: "Vue.js", level: 85 },
-        { name: "HTML5/CSS3", level: 95 },
-        { name: "Tailwind CSS", level: 90 },
-        { name: "JavaScript", level: 95 },
+        { name: "React/Next.js", level: 60 },
+        { name: "TypeScript", level: 65 },
+        { name: "HTML5/CSS3", level: 75 },
+        { name: "Tailwind CSS", level: 65 },
+        { name: "JavaScript", level: 55 },
       ],
     },
     {
@@ -23,12 +22,8 @@ export default function Skills() {
       icon: <Database className="h-6 w-6" />,
       color: "text-green-600",
       skills: [
-        { name: "Node.js", level: 90 },
-        { name: "Python", level: 85 },
-        { name: "Express.js", level: 88 },
-        { name: "Django/FastAPI", level: 80 },
-        { name: "GraphQL", level: 75 },
-        { name: "REST APIs", level: 95 },
+        { name: "Node.js", level: 50 },
+        { name: "Python", level: 80 },
       ],
     },
     {
@@ -36,12 +31,7 @@ export default function Skills() {
       icon: <Database className="h-6 w-6" />,
       color: "text-purple-600",
       skills: [
-        { name: "PostgreSQL", level: 90 },
-        { name: "MongoDB", level: 85 },
-        { name: "Redis", level: 80 },
-        { name: "MySQL", level: 85 },
-        { name: "Firebase", level: 75 },
-        { name: "Supabase", level: 80 },
+        { name: "MySQL", level: 60 },
       ],
     },
     {
@@ -49,12 +39,10 @@ export default function Skills() {
       icon: <Cloud className="h-6 w-6" />,
       color: "text-orange-600",
       skills: [
-        { name: "AWS", level: 85 },
-        { name: "Docker", level: 80 },
-        { name: "Kubernetes", level: 70 },
-        { name: "CI/CD", level: 85 },
-        { name: "Vercel", level: 90 },
-        { name: "GitHub Actions", level: 80 },
+        { name: "Azure", level: 60 },
+        { name: "Docker", level: 50 },
+        { name: "Vercel", level: 65 },
+        { name: "GitHub Actions", level: 70 },
       ],
     },
     {
@@ -62,11 +50,9 @@ export default function Skills() {
       icon: <Smartphone className="h-6 w-6" />,
       color: "text-pink-600",
       skills: [
-        { name: "React Native", level: 80 },
-        { name: "Flutter", level: 70 },
-        { name: "Expo", level: 85 },
-        { name: "iOS Development", level: 65 },
-        { name: "Android Development", level: 65 },
+        { name: "React Native", level: 70 },
+        { name: "iOS Development", level: 50 },
+        { name: "Android Development", level: 60 },
       ],
     },
     {
@@ -74,26 +60,19 @@ export default function Skills() {
       icon: <Wrench className="h-6 w-6" />,
       color: "text-gray-600",
       skills: [
-        { name: "Git/GitHub", level: 95 },
+        { name: "Git/GitHub", level: 90 },
         { name: "VS Code", level: 95 },
         { name: "Figma", level: 80 },
-        { name: "Postman", level: 90 },
-        { name: "Jira", level: 85 },
-        { name: "Slack", level: 90 },
       ],
     },
   ]
 
   const softSkills = [
-    "Team Leadership",
     "Project Management",
     "Problem Solving",
     "Communication",
     "Mentoring",
-    "Agile/Scrum",
     "Code Review",
-    "Technical Writing",
-    "Public Speaking",
     "Cross-functional Collaboration",
   ]
 
@@ -103,10 +82,6 @@ export default function Skills() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Skills & Expertise</h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              A comprehensive overview of my technical skills and proficiency levels across various technologies and
-              tools.
-            </p>
           </div>
 
           {/* Technical Skills */}

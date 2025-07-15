@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Image from "next/image"
 import Link from "next/link"
-
+import CV from ".../public/photo/cv-amawasu.pdf"
 export default function Profile() {
   return (
     <section id="about" className="min-h-screen flex items-center justify-center pt-20 pb-10">
@@ -15,7 +15,7 @@ export default function Profile() {
               <div className="relative">
                 <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl">
                   <Image
-                    src="/placeholder.svg?height=320&width=320"
+                    src="/photo/me01.jpg?height=320&width=320"
                     alt="Profile Picture"
                     width={320}
                     height={320}
@@ -56,15 +56,18 @@ export default function Profile() {
 
               {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-                <Button size="lg" className="bg-primary hover:bg-primary/90">
-                  <Download className="h-4 w-4 mr-2" />
-                  Download Resume
-                </Button>
-                <Button variant="outline" size="lg">
-                  <Link href="#contact" className="flex items-center gap-2">
-                    Let's Connect
-                  </Link>
-                </Button>
+                <a
+                  href={CV}
+                  target="_blank"
+                  className="w-full border-t-[1px] border-t-zinc-800 text-sm tracking-wide uppercase gap-2 hover:text-designColor duration-300"
+
+                  rel="noreferrer"
+                >
+                  <Button size="lg" className="bg-primary hover:bg-primary/90">
+                    <Download className="h-4 w-4 mr-2" />
+                    Download Resume
+                  </Button>
+                </a>
               </div>
 
               {/* Social Links */}
@@ -74,12 +77,6 @@ export default function Profile() {
                   className="w-12 h-12 bg-muted rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
                 >
                   <Github className="h-5 w-5" />
-                </Link>
-                <Link
-                  href="https://linkedin.com"
-                  className="w-12 h-12 bg-muted rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
-                >
-                  <Linkedin className="h-5 w-5" />
                 </Link>
                 <Link
                   href="mailto:amawasuduangin@gmail.com"

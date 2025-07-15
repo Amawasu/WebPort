@@ -17,11 +17,7 @@ export default function Footer() {
             <div className="md:col-span-2">
               <h3 className="text-xl font-bold text-foreground mb-4">Amawasu Duangain</h3>
               <p className="text-muted-foreground mb-4 max-w-md">
-                Senior Full-Stack Developer passionate about creating innovative solutions and building scalable
-                applications with modern technologies.
-              </p>
-              <p className="text-sm text-muted-foreground">
-                Available for freelance projects and full-time opportunities.
+                A fourth-year Information Technology student passionate about web development and UX/UI design. Experienced with Python, HTML, CSS, and JavaScript. Known for fast learning ability and enthusiasm in exploring practical skills in real working environments.
               </p>
             </div>
 
@@ -34,13 +30,13 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#experience" className="text-muted-foreground hover:text-foreground transition-colors">
-                    Experience
+                  <Link href="#projects" className="text-muted-foreground hover:text-foreground transition-colors">
+                    Projects
                   </Link>
                 </li>
                 <li>
-                  <Link href="#projects" className="text-muted-foreground hover:text-foreground transition-colors">
-                    Projects
+                  <Link href="#education" className="text-muted-foreground hover:text-foreground transition-colors">
+                    Education
                   </Link>
                 </li>
                 <li>
@@ -49,8 +45,13 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
-                    Contact
+                  <Link href="#languages" className="text-muted-foreground hover:text-foreground transition-colors">
+                    Languages
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#certificates" className="text-muted-foreground hover:text-foreground transition-colors">
+                    Certificates
                   </Link>
                 </li>
               </ul>
@@ -59,22 +60,18 @@ export default function Footer() {
             <div>
               <h4 className="text-lg font-semibold text-foreground mb-4">Services</h4>
               <ul className="space-y-2 text-muted-foreground">
-                <li>Full-Stack Development</li>
                 <li>Frontend Development</li>
                 <li>Backend Development</li>
                 <li>Cloud Architecture</li>
-                <li>Technical Consulting</li>
-                <li>Code Review & Mentoring</li>
               </ul>
             </div>
           </div>
 
           <div className="border-t border-border mt-8 pt-8 flex flex-col sm:flex-row justify-between items-center">
             <p className="text-muted-foreground flex items-center gap-2 mb-4 sm:mb-0">
-              Made with <Heart className="h-4 w-4 text-red-500" /> by Sarah Chen
+              Made with <Heart className="h-4 w-4 text-red-500" /> by Amawasu Duangain
             </p>
             <div className="flex items-center gap-4">
-              <p className="text-sm text-muted-foreground">© 2024 All rights reserved.</p>
               <Button variant="ghost" size="sm" onClick={scrollToTop} className="flex items-center gap-2">
                 <ArrowUp className="h-4 w-4" />
                 Back to Top

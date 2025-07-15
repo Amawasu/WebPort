@@ -8,81 +8,30 @@ import Link from "next/link"
 export default function Projects() {
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "ASLaZA UI",
       description:
-        "A comprehensive e-commerce solution with advanced features including real-time inventory management, payment processing, and analytics dashboard.",
+        "A mobile application UI design project for an online clothing store, created as part of a university UI design course.",
       longDescription:
-        "Built a full-stack e-commerce platform that handles thousands of transactions daily. Features include user authentication, product catalog, shopping cart, payment integration with Stripe, order management, and admin dashboard with analytics.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["Next.js", "TypeScript", "Stripe", "PostgreSQL", "Tailwind CSS", "Vercel"],
+        " The design focuses on clean layout, ease of navigation, and a smooth shopping experience. Designed using Figma.",
+      image: "/photo/figmaui.png?height=300&width=500",
+      technologies: ["Figma", "UI design"],
       githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
+      liveUrl: "https://www.figma.com/design/v3Rbq6s5yLZe3E42X6iNCy/ASLaZA-UI?node-id=1-22&t=hrfUEpQX0poPd1eC-1",
       featured: true,
-      stats: { stars: 124, forks: 45 },
+      stats: { stars: 1, forks: 45 },
     },
     {
-      title: "Real-Time Chat Application",
+      title: "TickTack Application",
       description:
-        "A modern chat application with real-time messaging, file sharing, and video calling capabilities built with WebRTC and Socket.io.",
+        "In a collaborative pair project for the TickTack Application, I was responsible for UX/UI design and jointly developed the code structure.",
       longDescription:
-        "Developed a scalable chat application supporting real-time messaging, file uploads, emoji reactions, and video calls. Implemented features like message encryption, user presence indicators, and chat rooms.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["React", "Node.js", "Socket.io", "WebRTC", "MongoDB", "AWS S3"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
+        "The project involved the practical application of SQL knowledge in developing an application for a Database class.",
+      image: "/photo/ticktackapp.png?height=300&width=500",
+      technologies: ["Figma", "Maui", "css", "HTML", "MySQL"],
+      githubUrl: "https://github.com/zemuza101/TickTack2",
+      liveUrl: "https://www.figma.com/design/bs5VJvK6cjjyk043mW4dWB/TodoList?node-id=0-1&t=uQFTMCdKvS1Yft7D-1",
       featured: true,
-      stats: { stars: 89, forks: 23 },
-    },
-    {
-      title: "Task Management Dashboard",
-      description:
-        "A collaborative project management tool with Kanban boards, time tracking, and team collaboration features.",
-      longDescription:
-        "Created a comprehensive project management solution with drag-and-drop Kanban boards, time tracking, team collaboration, file attachments, and detailed reporting capabilities.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["Vue.js", "Express.js", "MySQL", "Redis", "Docker"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
-      featured: false,
-      stats: { stars: 67, forks: 18 },
-    },
-    {
-      title: "Weather Analytics App",
-      description: "A weather dashboard with historical data analysis, forecasting, and interactive visualizations.",
-      longDescription:
-        "Built a weather analytics platform that aggregates data from multiple APIs, provides historical analysis, and displays interactive charts and maps for weather patterns.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["React", "D3.js", "Python", "FastAPI", "PostgreSQL"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
-      featured: false,
-      stats: { stars: 43, forks: 12 },
-    },
-    {
-      title: "AI-Powered Code Review Tool",
-      description:
-        "An intelligent code review assistant that uses machine learning to identify potential issues and suggest improvements.",
-      longDescription:
-        "Developed an AI-powered tool that analyzes code quality, identifies potential bugs, suggests optimizations, and provides automated code review comments using natural language processing.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["Python", "TensorFlow", "Flask", "Docker", "GitHub API"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
-      featured: false,
-      stats: { stars: 156, forks: 34 },
-    },
-    {
-      title: "Cryptocurrency Portfolio Tracker",
-      description:
-        "A comprehensive crypto portfolio management app with real-time price tracking and advanced analytics.",
-      longDescription:
-        "Created a portfolio tracking application that monitors cryptocurrency investments, provides real-time price updates, portfolio analytics, and automated trading alerts.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["React Native", "Node.js", "MongoDB", "CoinGecko API", "Firebase"],
-      githubUrl: "https://github.com",
-      liveUrl: "https://example.com",
-      featured: false,
-      stats: { stars: 78, forks: 21 },
+      stats: { stars: 2, forks: 23 },
     },
   ]
 
@@ -95,9 +44,6 @@ export default function Projects() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Projects</h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              A showcase of my recent work and personal projects that demonstrate my technical skills and creativity.
-            </p>
           </div>
 
           {/* Featured Projects */}
@@ -157,57 +103,6 @@ export default function Projects() {
                 </CardContent>
               </Card>
             ))}
-          </div>
-
-          {/* Other Projects */}
-          <div>
-            <h3 className="text-2xl font-bold text-foreground mb-8 text-center">Other Notable Projects</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {otherProjects.map((project, index) => (
-                <Card key={index} className="hover:shadow-lg transition-shadow duration-300 group">
-                  <CardHeader>
-                    <div className="flex items-start justify-between">
-                      <CardTitle className="text-lg text-foreground group-hover:text-primary transition-colors">
-                        {project.title}
-                      </CardTitle>
-                      {project.stats && (
-                        <div className="flex items-center gap-1 text-sm text-muted-foreground">
-                          <Star className="h-3 w-3" />
-                          {project.stats.stars}
-                        </div>
-                      )}
-                    </div>
-                    <CardDescription className="text-sm text-muted-foreground">{project.description}</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="flex flex-wrap gap-1 mb-4">
-                      {project.technologies.slice(0, 3).map((tech, techIndex) => (
-                        <Badge key={techIndex} variant="outline" className="text-xs">
-                          {tech}
-                        </Badge>
-                      ))}
-                      {project.technologies.length > 3 && (
-                        <Badge variant="outline" className="text-xs">
-                          +{project.technologies.length - 3}
-                        </Badge>
-                      )}
-                    </div>
-                    <div className="flex gap-2">
-                      <Button variant="outline" size="sm" asChild>
-                        <Link href={project.githubUrl}>
-                          <Github className="h-3 w-3" />
-                        </Link>
-                      </Button>
-                      <Button size="sm" asChild>
-                        <Link href={project.liveUrl}>
-                          <ExternalLink className="h-3 w-3" />
-                        </Link>
-                      </Button>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
           </div>
         </div>
       </div>

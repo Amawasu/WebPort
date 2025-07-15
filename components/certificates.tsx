@@ -14,11 +14,24 @@ export default function Certificates() {
       expiryDate: "-",
       description:
         "Identify the capabilities of GenAI for basic role-specific cybersecurity functions.",
-      image: "public/photo/cer01.jpg",
+      image: "/photo/cer01.jpg",
       verificationUrl: "https://www.coursera.org/account/accomplishments/verify/NTTT4RNU9KVA",
       skills: ["Prompt Engineering", "Cyber Threat Intelligence", "Data Ethics", "Security Testing", "Generative AI", "Vulnerability Assessments", "Security Information and Event Management (SIEM)", "Threat Detection", "Penetration Testing", "Cybersecurity", "Incident Response"],
       status: "Active",
     },
+  ]
+
+  const activities = [
+    {
+      title: "TickTack Application Development (Pair Project)",
+      category: "Software Development", // e.g., "Software Development", "Hackathon", "Volunteer Work"
+      date: "2024", // Or a date range like "Jan - Apr 2024"
+      description:
+        "Collaborated on UX/UI design and contributed to the codebase structure for the TickTack Application. This project involved applying SQL knowledge to build the application as part of a Database course.",
+      image: "/path/to/ticktack_image.jpg", // Replace with your actual image path
+      link: "/projects/ticktack", // Optional: Link to a detailed project page or GitHub
+      skills: ["UX/UI Design", "Code Structure", "SQL", "Database Management", "Team Collaboration"],
+    }
   ]
 
   const getStatusColor = (status: string) => {
@@ -55,18 +68,14 @@ export default function Certificates() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Certifications & Credentials</h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Professional certifications that validate my expertise and commitment to continuous learning in the
-              ever-evolving tech landscape.
-            </p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Certifications & Activity</h2>
           </div>
 
-          {/* Active Certifications */}
+          {/* Certifications */}
           <div className="mb-16">
             <h3 className="text-2xl font-bold text-foreground mb-8 flex items-center gap-2">
               <CheckCircle className="h-6 w-6 text-green-600" />
-              Active Certifications ({activeCertificates.length})
+              Certifications ({activeCertificates.length})
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {activeCertificates.map((cert, index) => (
@@ -124,6 +133,7 @@ export default function Certificates() {
               ))}
             </div>
           </div>
+
 
           {/* Expired/Previous Certifications */}
           {expiredCertificates.length > 0 && (

@@ -5,79 +5,36 @@ import { Badge } from "@/components/ui/badge"
 export default function Education() {
   const education = [
     {
-      degree: "Master of Science in Computer Science",
-      school: "Stanford University",
-      location: "Stanford, CA",
-      period: "2016 - 2018",
-      gpa: "3.9/4.0",
+      degree: "Bachelor of Science (Information Technology)",
+      school: "Bangkok University",
+      location: "Khlong Luang, Thailand",
+      period: "2023 - 2025",
+      gpa: "3.06/4.0",
       description:
-        "Specialized in Machine Learning and Distributed Systems. Completed thesis on 'Scalable Real-time Data Processing in Cloud Environments'.",
+        "The Information Technology program develops both technical and management skills through hands-on learning and modern tools, preparing students for careers in IT and tech entrepreneurship.",
       coursework: [
-        "Advanced Algorithms",
-        "Machine Learning",
-        "Distributed Systems",
-        "Database Systems",
-        "Computer Networks",
-        "Software Engineering",
-      ],
-      achievements: [
-        "Dean's List for 4 consecutive semesters",
-        "Graduate Research Assistant",
-        "Published 2 papers in peer-reviewed conferences",
-        "Teaching Assistant for CS106A Programming Methodology",
+        "Computer Graphics Application for Info.",
+        "Systems Analysis and Design.",
+        "Database Management Systems.",
+        "Internet of Things and Applications.",
+        "UX/UI Design.",
+        "Web Programming",
+        "Mobile Application Development.",
       ],
     },
     {
-      degree: "Bachelor of Science in Computer Science",
-      school: "University of California, Berkeley",
-      location: "Berkeley, CA",
-      period: "2012 - 2016",
-      gpa: "3.8/4.0",
+      degree: "Makudmuang Rajchawitthayalai School",
+      school: "Makutmuang Rajchawitthayalai School",
+      location: "Rayong",
+      period: "2020 - 2023",
+      gpa: "NA",
       description:
-        "Graduated Magna Cum Laude with a focus on Software Engineering and Web Development. Active member of the Computer Science Student Association.",
-      coursework: [
-        "Data Structures & Algorithms",
-        "Object-Oriented Programming",
-        "Web Development",
-        "Database Design",
-        "Computer Architecture",
-        "Software Engineering",
-      ],
-      achievements: [
-        "Magna Cum Laude graduate",
-        "President of Computer Science Student Association",
-        "Winner of Annual Hackathon 2015",
-        "Undergraduate Research Program participant",
-      ],
+        "The institution is committed to providing education of international quality in the domains of mathematics, science, technology, foreign languages, and environmental studies. Emphasis is placed on cultivating moral and ethical values, alongside promoting a sufficiency economy lifestyle, to adequately prepare students for the demands of the Eastern Economic Corridor (EEC).",
+
     },
   ]
 
-  const onlineCourses = [
-    {
-      title: "AWS Solutions Architect Professional",
-      provider: "Amazon Web Services",
-      completed: "2023",
-      description: "Advanced cloud architecture and AWS services",
-    },
-    {
-      title: "Advanced React and Redux",
-      provider: "Udemy",
-      completed: "2022",
-      description: "Modern React patterns and state management",
-    },
-    {
-      title: "Machine Learning Specialization",
-      provider: "Coursera (Stanford)",
-      completed: "2021",
-      description: "Comprehensive ML algorithms and applications",
-    },
-    {
-      title: "Docker and Kubernetes",
-      provider: "Linux Academy",
-      completed: "2021",
-      description: "Container orchestration and deployment",
-    },
-  ]
+
 
   return (
     <section id="education" className="py-20 bg-muted/30">
@@ -85,7 +42,6 @@ export default function Education() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Education</h2>
-            <p className="text-lg text-muted-foreground">My academic background and continuous learning journey</p>
           </div>
 
           {/* Formal Education */}
@@ -125,58 +81,10 @@ export default function Education() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
-                        <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
-                          <BookOpen className="h-4 w-4 text-primary" />
-                          Relevant Coursework:
-                        </h4>
                         <div className="flex flex-wrap gap-2">
-                          {edu.coursework.map((course, courseIndex) => (
-                            <Badge key={courseIndex} variant="outline" className="text-xs">
-                              {course}
-                            </Badge>
-                          ))}
+
                         </div>
                       </div>
-
-                      <div>
-                        <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
-                          <Award className="h-4 w-4 text-primary" />
-                          Achievements:
-                        </h4>
-                        <ul className="space-y-1">
-                          {edu.achievements.map((achievement, achIndex) => (
-                            <li key={achIndex} className="flex items-start gap-2 text-sm text-muted-foreground">
-                              <span className="text-primary mt-1">•</span>
-                              <span>{achievement}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-
-          {/* Online Courses & Certifications */}
-          <div>
-            <h3 className="text-2xl font-bold text-foreground mb-8 flex items-center gap-2">
-              <Award className="h-6 w-6 text-primary" />
-              Continuous Learning
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {onlineCourses.map((course, index) => (
-                <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
-                  <CardHeader>
-                    <CardTitle className="text-lg text-foreground">{course.title}</CardTitle>
-                    <CardDescription className="text-primary font-medium">{course.provider}</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground text-sm mb-3">{course.description}</p>
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <Calendar className="h-4 w-4" />
-                      <span>Completed: {course.completed}</span>
                     </div>
                   </CardContent>
                 </Card>
