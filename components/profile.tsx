@@ -57,13 +57,13 @@ export default function Profile() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
                 <a
                   href="/CV Amawasu.pdf"
-                  
+
                   target="_blank"
                   rel="noreferrer"
                 >
                   <Button size="lg" className="bg-primary hover:bg-primary/90">
                     <Download className="h-4 w-4 mr-2" />
-                    Download Resume
+                    Download CV
                   </Button>
                 </a>
               </div>
