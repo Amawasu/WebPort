@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Image from "next/image"
 import Link from "next/link"
-import CV from ".../public/photo/cv-amawasu.pdf"
 export default function Profile() {
   return (
     <section id="about" className="min-h-screen flex items-center justify-center pt-20 pb-10">
@@ -57,10 +56,9 @@ export default function Profile() {
               {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
                 <a
-                  href={CV}
+                  href="/CV Amawasu.pdf"
+                  
                   target="_blank"
-                  className="w-full border-t-[1px] border-t-zinc-800 text-sm tracking-wide uppercase gap-2 hover:text-designColor duration-300"
-
                   rel="noreferrer"
                 >
                   <Button size="lg" className="bg-primary hover:bg-primary/90">
